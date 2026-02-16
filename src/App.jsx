@@ -71,6 +71,7 @@ function App() {
           <label>
             Pubblico
             <input
+              className="m-3"
               type="checkbox"
               name="public"
               checked={formData.public}
