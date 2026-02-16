@@ -38,11 +38,11 @@ function App() {
 
   return (
     <div>
-      <h1>Nuovo Post</h1>
+      <h1 className=" m-3">Nuovo Post</h1>
 
       <form onSubmit={handleSubmit}>
-        <div>
-          <label>Autore</label>
+        <div className=" m-3">
+          <label className=" me-3">Autore</label>
           <input
             type="text"
             name="author"
@@ -51,8 +51,8 @@ function App() {
           />
         </div>
 
-        <div>
-          <label>Titolo</label>
+        <div className=" m-3">
+          <label className=" me-3">Titolo</label>
           <input
             type="text"
             name="title"
@@ -61,12 +61,13 @@ function App() {
           />
         </div>
 
-        <div>
+        <div className="d-flex align-items-center justify-content-center m-3 gap-3">
           <label>Testo</label>
+
           <textarea name="body" value={formData.body} onChange={handleChange} />
         </div>
 
-        <div>
+        <div className="m-3">
           <label>
             Pubblico
             <input
